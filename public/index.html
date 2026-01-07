@@ -37,7 +37,41 @@
           <a href="#contato">Contato</a>
         </nav>
 
-        <a class="btn btn--primary btn--sm" data-whatsapp-cta href="#" id="cta-header">Fale conosco pelo WhatsApp</a>
+        <div class="header__actions">
+          <button class="icon-btn" type="button" id="theme-toggle" aria-label="Alternar tema" aria-pressed="false">
+            <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M12 18a6 6 0 1 1 4.472-10.06 1 1 0 0 1-1.1 1.62A4 4 0 1 0 12 16a1 1 0 0 1 0 2Z"/>
+              <path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 17a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1ZM2 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm17 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1ZM4.22 4.22a1 1 0 0 1 1.42 0l1.41 1.41a1 1 0 1 1-1.41 1.42L4.22 5.64a1 1 0 0 1 0-1.42Zm12.73 12.73a1 1 0 0 1 1.42 0l1.41 1.41a1 1 0 0 1-1.41 1.42l-1.42-1.42a1 1 0 0 1 0-1.41ZM19.78 4.22a1 1 0 0 1 0 1.42l-1.41 1.41a1 1 0 1 1-1.42-1.41l1.42-1.42a1 1 0 0 1 1.41 0ZM7.05 16.95a1 1 0 0 1 0 1.41l-1.41 1.42a1 1 0 0 1-1.42-1.41l1.42-1.42a1 1 0 0 1 1.41 0Z"/>
+            </svg>
+          </button>
+
+          <button class="icon-btn icon-btn--menu" type="button" id="nav-toggle" aria-label="Abrir menu" aria-controls="mobile-nav" aria-expanded="false">
+            <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z"/>
+            </svg>
+          </button>
+
+          <a class="btn btn--primary btn--sm" data-whatsapp-cta href="#" id="cta-header">Fale conosco pelo WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="Menu">
+          <div class="mobile-nav__top">
+            <span class="mobile-nav__title">Menu</span>
+            <button class="icon-btn" type="button" id="nav-close" aria-label="Fechar menu">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12 5.7 16.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4Z"/>
+              </svg>
+            </button>
+          </div>
+          <nav class="mobile-nav__links" aria-label="Navegação mobile">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#contato">Contato</a>
+          </nav>
+          <a class="btn btn--primary" data-whatsapp-cta href="#" id="cta-mobile">Fale conosco pelo WhatsApp</a>
+        </div>
       </div>
     </header>
 
