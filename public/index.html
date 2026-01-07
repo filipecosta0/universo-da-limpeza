@@ -21,17 +21,18 @@
 
     <header class="header">
       <div class="container header__inner">
-        <div class="brand" aria-label="Universo da Limpeza">
+        <a class="brand brand--header" href="#" aria-label="Universo da Limpeza">
           <div class="brand__logo">
-            <img class="brand__img" src="/assets/logo-universo-da-limpeza.svg" alt="Logo Universo da Limpeza" loading="eager" decoding="async" width="42" height="42" />
+            <img class="brand__img navbar-logo" src="/assets/logo-universo-da-limpeza.svg" alt="Logo Universo da Limpeza" loading="eager" decoding="async" width="42" height="42" />
           </div>
           <div class="brand__text">
             <strong>Universo da Limpeza</strong>
             <span>Produtos de limpeza e utilidades</span>
           </div>
-        </div>
+        </a>
 
         <nav class="nav" aria-label="Navegação">
+          <a href="#catalogo">Catálogo</a>
           <a href="#beneficios">Benefícios</a>
           <a href="#como-funciona">Como funciona</a>
           <a href="#contato">Contato</a>
@@ -66,6 +67,7 @@
             </button>
           </div>
           <nav class="mobile-nav__links" aria-label="Navegação mobile">
+            <a href="#catalogo">Catálogo</a>
             <a href="#beneficios">Benefícios</a>
             <a href="#como-funciona">Como funciona</a>
             <a href="#contato">Contato</a>
@@ -121,6 +123,37 @@
               <a class="btn btn--primary btn--sm" data-whatsapp-cta href="#" id="cta-card">Abrir WhatsApp</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="catalogo">
+        <div class="container">
+          <div class="section__head">
+            <h2>Catálogo de produtos</h2>
+            <p>Busque por nome e filtre por categoria. Para comprar, fale conosco pelo WhatsApp.</p>
+          </div>
+
+          <div class="catalog__toolbar" role="search">
+            <label class="field">
+              <span class="field__label">Buscar</span>
+              <input class="input" type="search" id="catalog-search" placeholder="Ex: detergente, desinfetante..." autocomplete="off" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Categoria</span>
+              <select class="input" id="catalog-category">
+                <option value="">Todas</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="catalog__meta">
+            <span class="muted" id="catalog-count">0 produtos</span>
+          </div>
+
+          <div class="catalog__grid" id="catalog-grid" aria-live="polite"></div>
+
+          <div class="catalog__pagination" id="catalog-pagination" aria-label="Paginação"></div>
         </div>
       </section>
 
